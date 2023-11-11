@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descriptation" content="This is the home page.It introduces Chinese traditional culture.">
+    <meta name="keywords" content="Traditional handicraft,National features,Wonderful activity">
+    <title>Chinese traditional culture</title>
+    <link rel="shortcut icon" href="/image/favicon.ico">
+    @RenderSection("css", required: false)
+   
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+    <!-----------------beijingtu-------------------->
+    <div class="background">
+        <!-----------------m1 logo和导航菜单-------------------->
+        <header>
+
+            <div class="m1">
+                <div class="first">
+                    <img src="/image/main_logo.jpg">
+                    <h1>Chinese traditional culture</h1>
+                </div>
+
+                <ul class="menu">
+                    <li class="home"><a href="/Home/Index" target="_blank"><span class="fa fa-home"> </span> Home</a></li>
+                    <li class="literature">
+                        <a href="/Home/literature" target="_blank">
+                            <span class="fa fa-bars"></span>
+                            Literature
+                        </a>
+                        <ul class="drop-menu literature_menu">
+                            <li><a href="#">folk art</a></li>
+                            <li><a href="#">folk literature</a></li>
+                            <li><a href="#">filmography</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="festival">
+                        <a href="/Home/festival" target="_blank">
+                            <span class="fa fa-star"></span>
+                            Festival
+                        </a>
+                        <ul class="drop-menu festival_menu">
+                            <li><a href="#">holidays</a></li>
+                            <li><a href="#">festival activities</a></li>
+                            <li><a href="#">festival experience</a></li>
+                        </ul>
+                    </li>
+                    <li class="costume">
+                        <a href="/Home/museum" target="_blank">
+                            <span class="fa fa-image"></span>
+                            Museum
+                        </a>
+                        <ul class="drop-menu costume_menu">
+                            <li><a href="#">traditional costume</a></li>
+                            <li><a href="#">national fashion</a></li>
+                            <li><a href="#">beautiful decoration</a></li>
+                        </ul>
+                    </li>
+                    <li class="places">
+                        <a href="/Home/places" target="_blank">
+                            <span class="fa fa-building"></span>
+                            Journey
+                        </a>
+                        <ul class="drop-menu places_menu">
+                            <li><a href="#">places of interest</a></li>
+                            <li><a href="#">four seasons</a></li>
+                            <li><a href="#">cultural relics and historic sites</a></li>
+                            <li><a href="#">national customs</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+
+            </div>
+
+            <!-----------------m2 大背景-------------------------->
+            <nav class="box">
+                <div class="u2">
+                    Hello everyone,<p>welcome to China!</p>
+                </div>
+                <audio autoplay='autoplay' controls='controls' loop='loop' preload="auto" src='/music/music.mp3'>
+                </audio>
+            </nav>
+        </header>
+
+
+        <!--------------------content-------------------------->
+        @RenderBody()
+
+        <!--------------------m8 footer----------------------------->
+        <div class="m8">
+            <div class="u8">
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Legal notice</a></li>
+                    <li><a href="#">Website coalition</a></li>
+                    <li><a href="#">Blogroll</a></li>
+                </ul>
+
+                <div class="last">
+                    <div class="final">
+                        <img src="/image/main_logo.jpg">
+                        <h1>Chinese traditional culture</h1>
+                    </div>
+                    <div class="message">
+                        <div class="address">
+                            <i class="fa fa-map"> </i>
+                            <a>Address: Hebei University of Technology, Hongqiao District, Tianjin</a>
+                        </div>
+                        <div class="phone">
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:999-555-8888 " class="phone-num">999-555-8888</a>
+                        </div>
+                        <div class="envelope">
+                            <i class="fa fa-envelope"></i>
+                            <a href="mailto:sgreer@example.com/harpe ">sgreer@example.com/harpe</a>
+                        </div>
+                        <div class="valid">
+                            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://sfs-webdev.massey.ac.nz/site2213/158258/assignment/02/assignment2/home.html "
+                               aria-label="more">Valid HTML</a>
+                            <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://sfs-webdev.massey.ac.nz/site2213/158258/assignment/02/assignment2/home.css"
+                               aria-label="more">Valid CSS</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

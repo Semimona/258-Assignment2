@@ -1,0 +1,187 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section css{
+    <link rel="stylesheet" type="text/css" href="/static/home.css">
+}
+<div class="m3">
+    <div class="u3">
+        <div class="item1">
+            <img src="/image/picture2.jpg">
+            <img src="/image/picture4.jpg">
+            <img src="/image/picture5.jpg">
+        </div>
+        <div class="solar term">
+            <div class="part1">
+                <!-- <img id="img1" src="/image/picture2.jpg">  -->
+                <img src="/image/picture3.jpg">
+                <div class="content">
+                    <ul>
+                        <li>
+                            <h2>Brief introduction</h2>
+                            <p>
+                                One of the 24 solar terms, namely the traditional fifth qi of autumn in China...
+                                <a href="#">Read more>></a>
+                            </p>
+
+                        </li>
+                        <li>
+                            <h2>Folk-custom</h2>
+                            <p>
+                                1.Eat flower cakes 2.Drink chrysanthemum wine 3.Climbing... <a href="#"
+                                                                                               target="_blank">Read more>></a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lesson">
+                <p>1.The origin and development of traditional cultural words</p>
+                <p>2.Classic works of traditional Chinese culture</p>
+                <p>3.Famous Chinese novels</p>
+                <p>4.The Four Great Classical Novels of China</p>
+                <p>Chinese poetry</p>
+                <p>...</p>
+                <a href="#">Read more>></a>
+
+            </div>
+            <div class="show">
+                <div id="box1" onmouseout="shouwHidden(0)" onmouseover="shouwHidden(0.5)">
+                    <img src="/image/" id="img1" />
+                    <input type="button" id="left_btn" value="<" onclick="last()" />
+                    <input type="button" id="right_btn" value=">" onclick="next()" />
+                    <!-- <a href="#">Read more>></a> -->
+                </div>
+
+                <script src="/static/imgmove.js"></script>
+            </div>
+        </div>
+    </div>
+    <div class="u4">
+        <div class="item2">
+            <img src="/image/logo1.jpg">
+            <div class="title1">
+                <h1>Traditional handicraft</h1>
+            </div>
+        </div>
+        <div class="art">
+            <div class="block">
+                <a href="#"><img src="/image/handicraft1.jpg" class="pic6"></a>
+                <p class="p6">
+                    Introduce the representative figures, ideas and stories of each school in the
+                    pre-Qin and early Han dynasties!
+                </p>
+                <footer class="f6">
+                    <a href="https://www.baidu.com">Read more</a>
+                </footer>
+            </div>
+
+            <div class="block">
+                <a href="#"><img src="/image/handicraft2.jpg" class="pic6"></a>
+                <p class="p6">
+                    This paper introduces the literature works and appreciation before the unification
+                    of Qin Dynasty,
+                    shows the essence of pre-Qin poetry, and deeply feels the charm of pre-Qin literature!
+                </p>
+                <footer class="f6">
+                    <a href="https://www.baidu.com">Read more</a>
+                </footer>
+            </div>
+
+            <div class="block">
+                <a href="#"><img src="/image/handicraft3.jpg" class="pic6"></a>
+                <p class="p6">
+                    Take the poet as the clue, introduce the poet's life, representative works and
+                    their appreciation,
+                    show the politics, customs and culture of the Tang Dynasty!
+                </p>
+                <footer class="f6">
+                    <a href="https://www.baidu.com">Read more</a>
+                </footer>
+            </div>
+            <div class="block">
+                <a href="#"><img src="/image/handicraft4.jpg" class="pic6"></a>
+                <p class="p6">
+                    With the poet as the clue, introduces the poet's life, representative works and
+                    their appreciation,
+                    carries on the content annotation to the Song Ci, embodies the ancients' emotion!
+                </p>
+                <footer class="f6">
+                    <a href="https://www.baidu.com">Read more</a>
+                </footer>
+            </div>
+            <div class="block">
+                <a href="#"><img src="/image/handicraft5.jpg" class="pic6"></a>
+                <p class="p6">
+                    With the poet as the clue, introduces the poet's life, representative works and
+                    their appreciation,
+                    carries on the content annotation, the allusion source and the explanation to the Song Ci!
+                </p>
+                <footer class="f6">
+                    <a href="https://www.baidu.com">Read more</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="u4">
+        <div class="item3">
+            <img src="/image/logo2.jpg">
+            <div class="title2">
+                <h1>National features</h1>
+            </div>
+        </div>
+        <div class="utensil">
+            <div class="imgbox1">
+                <img src="/image/feature1.jpg">
+                <div class="word1">Characteristic village</div>
+            </div>
+            <div class="imgbox2">
+                <img src="/image/feature2.jpg">
+                <div class="word2">Ethnic tourism</div>
+            </div>
+            <div class="imgbox3">
+                <img src="/image/feature3.jpg">
+                <div class="word3">National diet</div>
+            </div>
+            <div class="imgbox4">
+                <img src="/image/feature4.jpg">
+                <div class="word4">Ethnic medicine</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="u5">
+        <div class="item4">
+            <img src="/image/logo3.jpg">
+            <div class="title3">
+                <h1>Wonderful activity</h1>
+            </div>
+        </div>
+        <div class="activities">
+            <div class="state">
+                <div class="dot dot1"> </div>
+                <div class="dot dot2"> </div>
+            </div>
+            <div class="banner">
+                <div class="pictures">
+
+                    <a href="#"><img src="/image/activity1.jpg" class="pic7"></a>
+                    <a href="#"><img src="/image/activity2.jpg" class="pic7"></a>
+                    <a href="#"><img src="/image/activity3.jpg" class="pic7"></a>
+                    <a href="#"><img src="/image/activity4.jpg" class="pic7"></a>
+                    <a href="#"><img src="/image/activity5.jpg" class="pic7"></a>
+                    <a href="#"><img src="/image/activity6.jpg" class="pic7"></a>
+
+                    <a href="#"><img src="/image/activity1.jpg" class="pic7"></a>
+                    <a href="#"><img src="/image/activity2.jpg" class="pic7"></a>
+                    <a href="#"><img src="/image/activity3.jpg" class="pic7"></a>
+                    <a href="#"><img src="/image/activity4.jpg" class="pic7"></a>
+                    <a href="#"><img src="/image/activity5.jpg" class="pic7"></a>
+                    <a href="#"><img src="/image/activity6.jpg" class="pic7"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

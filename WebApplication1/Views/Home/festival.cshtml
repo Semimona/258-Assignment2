@@ -1,0 +1,132 @@
+﻿@model List<WebApplication1.Data.Festival>
+@{
+    ViewBag.Title = "About";
+    WebApplication1.Controllers.Pager pager = ViewBag.pager as WebApplication1.Controllers.Pager;
+}
+@section css{
+    <link rel="stylesheet" type="text/css" href="/static/festival.css">
+
+}
+<div class="content">
+    <!--------------------content1-------------------------->
+    <div class="content1">
+        <div class="item1">
+            <img src="/image/logo.jpg">
+            <div class="title1">
+                <h1>Happy festival</h1>
+
+            </div>
+        </div>
+        <hr />
+        <div class="item1">
+
+            <div class="title1" style="margin-top:5px">
+                <form method="get">
+                    <input type="text" placeholder="Please enter keywords" name="keyword" value="@(Request.QueryString["keyword"])" />
+                    <button type="submit">Search</button>
+                    <a href="?pageIndex=1&keyword=@(Request.QueryString["keyword"])&sort=desc">descend order</a>
+                    <a href="?pageIndex=1&keyword=@(Request.QueryString["keyword"])&sort=asc">ascend order</a>
+                </form>
+            </div>
+        </div>
+        <div class="holiday">
+            @{
+                foreach (var item in Model)
+                {
+                    <div class="art">
+                        <img src="@item.Img" alt="" />
+                        <a href=" " class="artInfoBox" target="_blank">
+                            <div class="artBg"></div>
+                            <div class="artMsg">
+                                <p class="artTitle" style="font-size: 25px;">@item.Title</p>
+                            </div>
+                        </a>
+                        <div style="text-align:center"><h5>@item.Title</h5></div>
+                    </div>
+
+                }
+            }
+
+        </div>
+        <div style="display: block;justify-content: center;padding-left:200px">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="?pageIndex=1&keyword=@(Request.QueryString["keyword"])&sort=@(Request.QueryString["sort"])">首页</a></li>
+                    <li class="page-item"><a class="page-link" href="?pageIndex=@(pager.PrePage)&keyword=@(Request.QueryString["keyword"])&sort=@(Request.QueryString["sort"])">上一页</a></li>
+                    <li class="page-item"><a class="page-link" href="#">@(pager.PageIndex)/@(pager.PageCount)</a></li>
+                    <li class="page-item"><a class="page-link" href="?pageIndex=@(pager.NextPage)&keyword=@(Request.QueryString["keyword"])&sort=@(Request.QueryString["sort"])" )>下一页</a></li>
+                    <li class="page-item"><a class="page-link" href="?pageIndex=@(pager.PageCount)&keyword=@(Request.QueryString["keyword"])&sort=@(Request.QueryString["sort"])">尾页</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <!--------------------content2-------------------------->
+    <div class="content2">
+        <div class="item2">
+            <img src="/image/logo.jpg">
+            <div class="title2"><h1>Festival activities</h1></div>
+        </div>
+
+        <div class="activities">
+            <img src="/image/page3_2.jpg">
+            <img src="/image/page3_3.jpg">
+            <div class="word">
+                <ul>
+                    <li>
+                        Tujia Bull King Festival<p>
+                            Niuwang Festival or Niuwanghui is a traditional festival of Tujia people.
+                            The Tujia people believe in and worship cows and have great respect for them ...
+                        </p>
+                    </li>
+                    <hr class="line">
+                    <li>
+                        "Playing the same year" friendship<p>
+                            "Playing the same year" is a cultural tradition of Miao, Dong and Yao minorities in Rongshui County.
+                            It is usually held during the Spring Festival between villages, and the two parties call each other "the same year" ...
+                        </p>
+                    </li>
+                    <hr class="line">
+                    <li>
+                        Tibetans celebrate "Upper Ninth Festival"<p>
+                            Compatriots held lantern festivals, lion dances, dragon dances and other activities
+                            to celebrate the arrival of the "Upper Ninth Festival" ...
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--------------------content3-------------------------->
+    <div class="content3">
+        <div class="item3">
+            <img src="/image/logo.jpg">
+            <div class="title3"><h1>Festival experience</h1></div>
+        </div>
+        <div class="experience">
+            <div class="block">
+                <img src="/image/experience1.jpg" class="pic6" />
+                <div class="word1">Shui nationality</div>
+            </div>
+            <div class="block">
+                <a href="/Home/Han" target="_blank"><img src="/image/experience2.jpg" class="pic6" /> </a>
+                <div class="word2">Han nationality</div>
+            </div>
+            <div class="block">
+                <img src="/image/experience3.jpg" class="pic6" />
+                <div class="word3">Jingpo nationality</div>
+            </div>
+            <div class="block">
+                <img src="/image/experience4.jpg" class="pic6" />
+                <div class="word4">Maonan nationality</div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
